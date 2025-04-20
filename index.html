@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My E-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <header>
@@ -12,23 +12,19 @@
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#reflections">Reflections</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+                <li><a href="#units">Units</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my e-portfolio!</p>
+            <h2>About the module: Object Oriented Programming</h2>
+            <p>This module focused on the principles of object-oriented programming in Python. We learned about classes, inheritance, polymorphism, and encapsulation. The module also covered data structures and algorithms, including their implementation in Python. UML diagrams were used to model the design of the programs.</p>
         </section>
 
-        <section id="projects">
-            <h2>Object Oriented Programming</h2>
-            <p>This module focused on the principles of object-oriented programming in Python. We learned about classes, inheritance, polymorphism, and encapsulation. The module also covered data structures and algorithms, including their implementation in Python. UML diagrams were used to model the design of the programs.</p>
-            
-            <section id="reflection">
+        <section id="reflection">
             <h2>Reflection on Object-Oriented Programming</h2>
 
             <p>This reflection utilises the Four F's (Facts, Feelings, Findings, Future) framework to critically evaluate the learning experience of Object-Oriented Programming (OOP) concepts. As a junior frontend engineer primarily experienced with JavaScript and having only brief prior exposure to Python, this module, grounded in Allen B. Downey's "Think Python" and involving a project on designing robot-human interaction, offered a structured immersion into OOP principles such as Encapsulation, Abstraction, Inheritance and Polymorphism: interacting objects on which the structure of OOP programs is based, promoting modularity, reusability, and easier maintenance by breaking down complexity into manageable, encapsulated parts.</p>
@@ -40,7 +36,7 @@
 
             <h4>Feelings</h4>
             <p>Engaging deeply with Python's approach to OOP felt like exploring familiar territory (object concepts) through a new lens. Having primarily worked with JavaScript objects, prototypes, and ES6 classes in a frontend context, Python's structure felt notably explicit and, in some ways, more formally defined. </p>
-            <p>Python’s connections to JavaScript were evident. Python's class syntax offered a conceptual parallel to JavaScript's ES6 class, although the underlying difference between Python's class-based inheritance and JavaScript's prototypal inheritance was an important difference. The explicit nature of Python's self was different to the more context-dependent behaviour of JavaScript's this keyword. Python's clear separation of mutable (list) and immutable (tuple) sequence types also provided a different perspective compared to JavaScript arrays. Both languages clearly support multiple paradigms, including object-oriented and functional approaches.</p>
+            <p>Python's connections to JavaScript were evident. Python's class syntax offered a conceptual parallel to JavaScript's ES6 class, although the underlying difference between Python's class-based inheritance and JavaScript's prototypal inheritance was an important difference. The explicit nature of Python's self was different to the more context-dependent behaviour of JavaScript's this keyword. Python's clear separation of mutable (list) and immutable (tuple) sequence types also provided a different perspective compared to JavaScript arrays. Both languages clearly support multiple paradigms, including object-oriented and functional approaches.</p>
             <p>The required self parameter, while initially feeling unnecessary compared to JavaScript's implicit this, quickly became appreciated for its clarity, removing the ambiguity often encountered with this binding in JavaScript callbacks or different execution contexts.</p>
             <p>While comfortable manipulating objects and using classes in JavaScript for UI components or state management, the formal OOP structure presented in "Think Python" felt more rigorous, although there was an appreciation for Python's syntactic clarity. Concepts like class-based inheritance felt more straightforward compared to navigating JavaScript's prototype chain, especially having only briefly encountered Python before. Designing the robot-human interaction project using these principles was challenging but ultimately rewarding, as the OOP structure helped organise the complexity. Debugging interactions, however, sometimes felt frustrating, echoing similar challenges in complex JavaScript applications but perhaps highlighting Python's stricter error handling (e.g., TypeErrors).</p>
 
@@ -53,51 +49,57 @@
             <h4>Future</h4>
             <p>The structured understanding of OOP gained from this module will directly influence my professional approach as I intend to apply principles of clear encapsulation, well-defined interfaces, and thoughtful use of classes (or functional alternatives where appropriate) when building JavaScript components and managing application state, aiming for greater modularity and testability. Understanding Python's explicit self reinforces the need for careful testing and management of this in JavaScript.</p>
             <p>This experience motivates exploring formal design patterns (Strategy, Observer, etc.) more deeply and applying them within frontend frameworks. The principles practiced in the robot-human interaction project – designing clear class hierarchies and managing object interactions – are directly applicable to designing complex UI components and state management logic. This cross-language perspective, rooted in a solid OOP foundation gained via Python, enhances my ability to architect robust and maintainable applications, contributing positively to my professional growth.</p>
-            </section>
+        </section>
 
+        <section id="units">
             <article>
                 <h3>Unit 1: An Introduction to Python Programming and the OO Programming Paradigm</h3>
-                <p>Description of the project...</p>
-                <a href="#">Link to Project/Repo</a>
+                <p>For this unit I have setup a basic Python environment to understand the basics of the Object-Oriented Programming Paradigm. I have accessed the Think Python textbook for the first time and found it to be a great resource for understanding the basics.</p>
             </article>
             <article>
                 <h3>Unit 2: Object Oriented Analysis - Initial Steps towards Programming in Python</h3>
-                <p>Description of the project...</p>
-                <a href="#">Link to Project/Repo</a>
+                <p>In Unit 2 we went deeper into the Object-Oriented Programming Paradigm using Chapter 16 and 17 of the Think Python textbook. Chapter 16 covers defining your own data types using classes (like a Time type) and looks at functions that either change objects or create new ones. Chapter 17 then transforms these functions into methods directly associated with the class, introduces special methods for setup (__init__) and display (__str__), and explains how operators like + can work with your custom types.</p>
             </article>
             <article>
                 <h3>Unit 3: Unified Modelling Language (UML)</h3>
-                <p>Description of the project...</p>
-                <a href="#">Link to Project/Repo</a>
+                <p>In this Unit we learned about UML diagrams and how they provide value throughout the Software Development Life Cycle. The ways in which they are used are as follows: Use Case and Activity diagrams dominate early requirements analysis to capture functionality and workflows; Component, Package, and Deployment diagrams shape high-level architectural design; detailed design heavily relies on Class, Sequence, Communication, and State Machine diagrams to specify object structure and interactions; these detailed diagrams then serve as a reference during implementation and inform test case design alongside Use Case and Activity diagrams for validation. All diagrams collectively act as crucial documentation for ongoing maintenance.</p>
             </article>
             <article>
                 <h3>Unit 4: Applying a UML Model to a Program Implementation: UML in Practice</h3>
-                <p>Description of the project...</p>
-                <a href="#">Link to Project/Repo</a>
+                <p>In this Unit we studied the implementation of UML diagrams in more depth, and we started working on the first submission for this module. An example of a class diagram is shown below:</p>
+                <img src="assets/class-diagram.png" alt="Class Diagram" class="article-image">
             </article>
             <article>
                 <h3>Unit 5: More on Classes</h3>
-                <p>Description of the project...</p>
+                <p>For this Unit we focused on Classes, examining in depth the concepts of modularity, inheritance, aggregation, and composition. In addition, the concept of polymorphism was further explored through a practical excercise that can be found below:</p>
+                <p> exercise </p>
             </article>
             <article>
                 <h3>Unit 6: Abstract Methods and Interfaces</h3>
-                <p>Description of the project...</p>
+                <p>For this Unitwe focused on the concept of Abstract Methods and Interfaces and how they can be used to create more flexible and reusable code.</p>
             </article>
             <article>
                 <h3>Unit 7: Debugging / Error Handling, Data Structures and Data Search</h3>
-                <p>Description of the project...</p>
+                <p>In this Unit we gained an understanding of how fundamental debugging code and handling errors are, and how to do so with the tools provided by Python. Furthermore, we continued to look at data structures to familiarise ourselves with different structures and apply a range of tecniques to them.</p>
+                <p>The activity <i>Discuss the ways in which data structures support object-oriented development. Use examples of three different data structures to contextualise your response.</i> can be found below:</p>
+                <p class="article-text">Object-Oriented Programming (OOP) in Python relies fundamentally on built-in data structures to effectively manage the state encapsulated within objects and the relationships between them. While classes define the blueprint, structures like list, dict, and set provide the practical mechanisms for organizing data internally. For instance, the list, an ordered and mutable sequence, is commonly utilized within an object to manage collections where sequence or multiplicity is important. A ShoppingCart object, for example, naturally employs a list to store Item objects, preserving the order of addition and allowing duplicates, thereby directly implementing the "has-many" aggregation or composition relationship central to many object-oriented designs. The list's inherent methods for appending, inserting, or accessing elements by index become integral parts of the encapsulating object's behavior.</p>
+                <p class="article-text">Beyond simple ordered sequences, dictionaries (dict) and sets (set) offer specialized capabilities crucial for other common OOP scenarios. The dict, storing key-value pairs, enables highly efficient data retrieval based on unique identifiers, making it ideal for managing associations or internal mappings within an object, such as a UserRegistry using usernames as keys to quickly access User objects. Conversely, the set provides an unordered collection of unique elements, perfectly suited for situations where only the presence and uniqueness of items matter, like managing unique tags associated with an Article object, inherently preventing duplicates. Thus, list, dict, and set are not merely containers but essential tools integrated within object design, enabling the practical realization of encapsulation, association, and efficient state management vital to robust object-oriented systems in Python.</p>
             </article>
             <article>
                 <h3>Unit 8: Data Structures and Data Search in Practice</h3>
-                <p>Description of the project...</p>
+                <p>In this Unit we experimented with data stractures and practical operations on them. We also practiced the ways algorithms can be implemented using Python.</p>
+                <p>The Collaborative Discussion can be found below:</p>
+                <p><a href="https://www.my-course.co.uk/mod/forum/discuss.php?d=292284#p563495" target="_blank" rel="noopener noreferrer">View Activity Discussion</a></p>
+                
             </article>
             <article>
                 <h3>Unit 9: Packaging and Testing</h3>
-                <p>Description of the project...</p>
+                <p>For this Unit we learned about testing and how to implement tests in a Python program. Through the textbook <i>Review of Automated Test Case Generation, Optimization, and Prioritization Using UML Diagrams: Trends, Limitations, and Future Directions</i> by Kongarana, S. R., Rao, A. A. and Raju, P. R. (2024), we learned how leveraging UML diagrams can help in having a structured approach for the automated generation of test cases. Their work surveys how models such as sequence or state diagrams can be systematically analyzed to create test suites, optimize them for better coverage or reduced redundancy, and prioritize test execution. It also explores the limitations of this approach, like the focus on only certain diagram types and the need for better handling of model complexity.</p>
+                <p> exercise</p>
             </article>
             <article>
                 <h3>Unit 10: Testing Code in Practice</h3>
-                <p>Description of the project...</p>
+                <p>In this Unit we learned how to write tests for a Python program </p>
             </article>
             <article>
                 <h3>Unit 11: Pointers, References, Memory, and Design Patterns</h3>
@@ -107,10 +109,7 @@
                 <h3>Unit 12: Working with Design Patterns to Structure Code</h3>
                 <p>Description of the project...</p>
             </article>
-
         </section>
-
-     
     </main>
 
     <footer>
