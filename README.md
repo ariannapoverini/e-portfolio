@@ -2,4 +2,8 @@
 
 The e-portfolio can be viewed here: https://ariannapoverini.github.io/e-portfolio/
 
-The e-portfolio currently covers the module on Object Oriented Programming.
+The e-portfolio currently covers the following modules:
+
+- Secure Software Development
+
+- Object Oriented Programming
