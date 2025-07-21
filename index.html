@@ -11,16 +11,99 @@
         <h1>My E-Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#reflection">Reflection</a></li>
-                <li><a href="#units">Units</a></li>
+                <li><a href="#secure-software-development"><b>Secure Software Development</b></a></li>
+                <li><a href="#object-oriented-programming"><b>Object Oriented Programming</b></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>About the module: Object Oriented Programming</h2>
+        <section id="secure-software-development">
+
+            <section id="about">
+            <h2>Secure Software Development</h2>
+            <p>This module focused on the security risks associated with programming, future trends in secure software development and software architecture. </p>
+        </section>
+
+        <section id="units">
+            <article>
+                <h3>Unit 1: Introduction to Secure Software Development</h3>
+                <p>In this first unit we were introduced to the core concepts at the heart of Secure Software Development. With a particular focus on outlining different approaches, their strenghts and weaknesses in relation to software development and architecture.</p>
+                <p>The main goal of this unit was to understand and familiarise ourselves with the industry standards and best practices which are utilised in the workplace.</p>
+                <p><b>The Initial discussion post can be found below:</b></p>
+                <p><a href="https://www.my-course.co.uk/mod/forum/discuss.php?d=308969" target="_blank" rel="noopener noreferrer">View Activity Discussion</a></p>
+            </article>
+            <article>
+                <h3>Unit 2: UML Modelling to Support Secure System Planning</h3>
+                <p>In this unit, the focus was on the use of UML diagrams to support the planning of a secure system. We gained hands-on experience with creating UML models and understood how they can be used to better the communication amongst team members. I look forward to using this knowledge in my team projects at work.</p>
+            </article>
+            <article>
+                <h3>Unit 3: Programming Languages: History, Concepts & Design</h3>
+                <p>In this unit, we explored the history of programming languages, from Alan Turing's work to early languages like Cobol and Fortran, which shaped modern design. We then put theory into practice with Python, learning key concepts like inheritance and polymorphism. The module also covered crucial security best practices to defend against common vulnerabilities. Finally, we learned about design patterns as templates for solving recurring software challenges. We got an overview connecting programming theory with practical, secure coding skills.</p>
+                <p>This was an interesting yet busy unit, I particularly enjoyed the historical aspect of it.</p>
+            </article>
+            <article>
+                <h3>Unit 4: Exploring Programming Language Concepts</h3>
+                <p>In this module we focused on regular expressions and recursion. Specifically on their security implications, learning not just how to use them, but also the security risks they can introduce. The goal is to understand the pros and cons of each approach, as an aid to writing more secure and effective code.</p>
+                <p>Additionally, we completed an activity collateral to the reading of <i>Weidman, A. (no date) <b>Regular expression Denial of Service</b></i> which can be found below:</p>
+                <p>A regular expression becomes an "Evil Regex" when vulnerable to Regular Expression Denial of Service (ReDoS), an algorithmic complexity attack. This vulnerability arises from "catastrophic backtracking," where the regex engine's evaluation time scales exponentially with input length, consuming excessive CPU resources and rendering systems unresponsive, as famously occurred with Stack Overflow in 2016. The root cause often lies in complex patterns like nested quantifiers (e.g., `(a+)+`) or polynomial overlapping adjacency. Such regexes are notoriously difficult to debug and maintain, and their security risks are often overlooked. The increasing use of AI-powered assistants, which can generate insecure expressions, further exacerbates this problem, as developers may inadvertently integrate vulnerable code. Effective mitigation involves a multi-pronged strategy: transitioning to ReDoS-safe engines like Google's `re2`, employing detection tools, validating input length, and implementing execution timeouts. Although indispensable for security tasks like input validation and sanitisation, the inherent complexity of regular expressions makes them a double-edged sword, frequently introducing denial-of-service vulnerabilities. Consequently, continuous developer education on secure coding practices and rigorous testing of all regex patterns, especially those generated by AI, are paramount to building resilient software.</p>
+            </article>
+            <article>
+                <h3>Unit 5: An Introduction to Testing</h3>
+                <p>In this unit, our focus was on software testing, with a special emphasis on security. We learned essential terminology, various testing techniques, and important industry standards like OWASP. The main goal was to understand how to design effective test plans that could identify and prevent security breaches. We explored practical Python tools to automate testing, including using linters.</p>
+                <p><b>Equivalence Testing in Python:</b></p>
+                <p> This script demonstrates a concept called equivalence partitioning, which is a way of sorting a collection of items into groups based on a specific rule. The rule for this example states that two numbers, x and y, are considered equivalent if the difference between them is divisible by 4. 
+                    This is checked with the code (x - y) % 4 == 0. The script applies this rule to a set of integers from -3 to 4, and then checking if each is divisible by 4. 
+                    
+                    The result is the creation of four distinct groups where all numbers in a group are equivalent to each other under that rule. For instance, the numbers 1 and -3 are placed in the same group because their difference is 4, which is divisible by 4. The output first lists the groups ({0, 4}, {1, -3}, {2, -2}, {3, -1}) and then shows how each individual number from the original set maps into one of these groups. </p>
+            </article>
+            <article>
+                <h3>Unit 6: Using Linters to Support Python Testing</h3>
+                <p>In this module, our focus was on using Python technologies to develop high-quality and secure code. We delved into linters, learning how to apply different ones, appreciating their unique contributions and how to use them in various scenarios. The main objective being providing us with the tools to develop Python code so that it would be free from error and designed consistently.</p>
+                <p>I found the linterst to be a particularly interesting topic, as it is something which I have been using and I feel that I now grasp much better.</p>
+                <p>In this module, we also submitted our first assignment which consisted of a Design Document prepared by our team, and a peer review.</p>
+            </article>
+            <article>
+                <h3>Unit 7: Introduction to Operating Systems</h3>
+                <p>In this unit, our focus was on Operating Systems and their relationship with programming and security. We learned the core functions of a typical OS, looking at common examples and the key differences between processes, threads, and schedulers. We also discussed crucial approaches for enhancing OS security and compared various virtualisation methods. A significant part of the week was understanding the distinction between dynamic and shared libraries, recognising the security implications they have when our applications need to interact with the operating system.</p>
+                <p><b>What is an Ontology?:</b></p>
+                <p>The software development lifecycle incorporates critical testing phases to ensure system integrity. For a complex application like an e-commerce platform, integration testing is essential, verifying the interoperability of components such as the product catalogue, shopping cart, and payment gateway. This phase confirms seamless data flow and interaction, utilising test doubles like mocks and stubs to create controlled environments. Mocks can simulate external payment services, enabling rigorous testing of transaction logic without real financial processing, while stubs can provide predefined responses from an inventory system that is not yet complete. Following successful integration, system testing evaluates the entire e-shop as a cohesive whole. This holistic assessment validates end-to-end functional workflows, from user registration to order fulfillment, and assesses non-functional requirements such as performance under high user loads and security against potential threats. The final stage, acceptance testing, ensures the platform meets business objectives and user expectations. User Acceptance Testing (UAT) involves target users performing real-world scenarios to validate usability and functionality, often through beta testing. Concurrently, Operational Acceptance Testing (OAT) confirms the e-shop's operational readiness, scrutinising procedures for deployment, backup, and recovery. A similar multi-layered testing strategy is fundamental to delivering a robust, reliable, and secure e-commerce experience.</p>
+            </article>
+            <article>
+                <h3>Unit 8: Cryptography and Its Use in Operating Systems</h3>
+                <p>In this unit, our focus was on cryptography, exploring its principles, technology, and use with operating systems. We examined the meaning of cryptography and its application through a case study involving OS integration. A significant part of our learning was dedicated to exploring common cryptographic libraries and building a basic application that used these libraries to encode sample data.</p>
+                <p>Below, the link to the discussion centered around <b>TrueCrypt</b> can be found:</p>
+                <a href="https://www.my-course.co.uk/mod/forum/discuss.php?d=310088 " target="_blank" rel="noopener noreferrer">View Activity Discussion</a>
+            </article>
+            <article>
+                <h3>Unit 9: Developing an API for a Distributed Environment</h3>
+                <p>For this module, our focus was on practical Python development skills crucial for our summative assessment. We built an API and used it to create and read records, which involved investigating CRUD capabilities and expanding our knowledge of Python libraries. We also reflected on the utility of an ontology in a distributed architecture. The key outcome was creating an API for file management, a significant step that involved bridging our secure back-end code with a user interface, expanding our skills from server-side development to include UI interaction.</p>
+            </article>
+            <article>
+                <h3>Unit 10: From Distributed Computing to Microarchitectures</h3>
+                <p>In this unit, our focus was on system architectures, from monolithic deployments to microservices and virtualisation. We explored their evolution, strengths, and weaknesses, with a strong emphasis on security. We learned how distributed systems increase the attack surface and examined security attacks specific to virtual environments. A key takeaway was the importance of encryption and key distribution to protect data in modern, distributed applications. This brought the module into a timely and relevant context of distributed operations.</p>
+                <p><b>Faceted Data:</b></p>
+                <p>The concept of "faceted data" provides a robust, language-based methodology for enforcing information flow security to prevent data leakage. As introduced by Schmitz et al. (2016), this paradigm centres on "faceted values"—data constructs that dynamically adapt their behaviour and representation based on the privilege level of the observing context. This mechanism ensures sensitive information is only exposed to authorised entities, offering a strong confidentiality guarantee that is independent of application-level bugs. The primary strength of this model is its ability to enforce security at a fundamental level, decoupling information flow from application logic. However, the paradigm presents considerable implementation challenges, particularly when translating it from functional languages like Haskell, which use sophisticated constructs such as control and data monads. In object-oriented languages like Python, simulating this behaviour would conceptually require wrapper classes and context managers to track observer privileges, introducing significant architectural overhead and potential performance impacts. While a direct translation is complex, the core idea of context-aware data representation remains a powerful strategy for building secure systems, though its practical adoption requires navigating a steep conceptual curve and substantial engineering effort.</p>
+            </article>
+            <article>
+                <h3>Unit 11: Future Trends in Secure Software Development</h3>
+                <p>Furthermore, we submitted our second assignment which consisted in an indipendently developed CLI Python application. The design document previously submitted as its starting point.</p>
+                <p>Below, the link to the debate on <b>Microservices and Microkernels</b> can be found:</p>
+                <a href="https://www.my-course.co.uk/mod/forum/discuss.php?d=310073 " target="_blank" rel="noopener noreferrer">View Activity Discussion</a>
+            </article>
+            <article>
+                <h3>Unit 12: The Great Tanenbaum-Torvalds Debate Revisited</h3>
+                <p>For the last unit, our focus was on the historic Tanenbaum-Torvalds debate. We revisited their 1990s arguments over monolithic versus microkernel operating systems, considering them in both their original context and today's security-conscious world. We analysed how modern trends like microservices and constant cyber-attacks influence these design choices. This debate prompted us to critically re-evaluate our opinions on monolithic versus modular system architectures, thinking about which approach is best suited for the challenges of today's distributed and security-focused computing landscape.</p>
+                <p>Additionally, we submitted our third assignment, which consisted in the completion ofthis e-portfolio.</p>
+            </article>
+        </section>
+         
+        </section>
+        
+        <section id="object-oriented-programming">
+
+            <section id="about">
+            <h2>Object Oriented Programming</h2>
             <p>This module focused on the principles of object-oriented programming in Python. We learned about classes, inheritance, polymorphism, and encapsulation. The module also covered data structures and algorithms, including their implementation in Python. UML diagrams were used to model the design of the programs.</p>
         </section>
 
@@ -82,8 +165,8 @@
                 <h3>Unit 7: Debugging / Error Handling, Data Structures and Data Search</h3>
                 <p>In this Unit we gained an understanding of how fundamental debugging code and handling errors are, and how to do so with the tools provided by Python. Furthermore, we continued to look at data structures to familiarise ourselves with different structures and apply a range of tecniques to them.</p>
                 <p>The activity <i>Discuss the ways in which data structures support object-oriented development. Use examples of three different data structures to contextualise your response.</i> can be found below:</p>
-                <p class="article-text">Object-Oriented Programming (OOP) in Python relies fundamentally on built-in data structures to effectively manage the state encapsulated within objects and the relationships between them. While classes define the blueprint, structures like list, dict, and set provide the practical mechanisms for organizing data internally. For instance, the list, an ordered and mutable sequence, is commonly utilized within an object to manage collections where sequence or multiplicity is important. A ShoppingCart object, for example, naturally employs a list to store Item objects, preserving the order of addition and allowing duplicates, thereby directly implementing the "has-many" aggregation or composition relationship central to many object-oriented designs. The list's inherent methods for appending, inserting, or accessing elements by index become integral parts of the encapsulating object's behavior.</p>
-                <p class="article-text">Beyond simple ordered sequences, dictionaries (dict) and sets (set) offer specialized capabilities crucial for other common OOP scenarios. The dict, storing key-value pairs, enables highly efficient data retrieval based on unique identifiers, making it ideal for managing associations or internal mappings within an object, such as a UserRegistry using usernames as keys to quickly access User objects. Conversely, the set provides an unordered collection of unique elements, perfectly suited for situations where only the presence and uniqueness of items matter, like managing unique tags associated with an Article object, inherently preventing duplicates. Thus, list, dict, and set are not merely containers but essential tools integrated within object design, enabling the practical realization of encapsulation, association, and efficient state management vital to robust object-oriented systems in Python.</p>
+                <p class="article-text">Object-Oriented Programming (OOP) in Python relies fundamentally on built-in data structures to effectively manage the state encapsulated within objects and the relationships between them. While classes define the blueprint, structures like list, dict, and set provide the practical mechanisms for organising data internally. For instance, the list, an ordered and mutable sequence, is commonly utilised within an object to manage collections where sequence or multiplicity is important. A ShoppingCart object, for example, naturally employs a list to store Item objects, preserving the order of addition and allowing duplicates, thereby directly implementing the "has-many" aggregation or composition relationship central to many object-oriented designs. The list's inherent methods for appending, inserting, or accessing elements by index become integral parts of the encapsulating object's behavior.</p>
+                <p class="article-text">Beyond simple ordered sequences, dictionaries (dict) and sets (set) offer specialised capabilities crucial for other common OOP scenarios. The dict, storing key-value pairs, enables highly efficient data retrieval based on unique identifiers, making it ideal for managing associations or internal mappings within an object, such as a UserRegistry using usernames as keys to quickly access User objects. Conversely, the set provides an unordered collection of unique elements, perfectly suited for situations where only the presence and uniqueness of items matter, like managing unique tags associated with an Article object, inherently preventing duplicates. Thus, list, dict, and set are not merely containers but essential tools integrated within object design, enabling the practical realisation of encapsulation, association, and efficient state management vital to robust object-oriented systems in Python.</p>
             </article>
             <article>
                 <h3>Unit 8: Data Structures and Data Search in Practice</h3>
@@ -94,7 +177,7 @@
             </article>
             <article>
                 <h3>Unit 9: Packaging and Testing</h3>
-                <p>For this Unit we learned about testing and how to implement tests in a Python program. Through the textbook <i>Review of Automated Test Case Generation, Optimization, and Prioritization Using UML Diagrams: Trends, Limitations, and Future Directions</i> by Kongarana, S. R., Rao, A. A. and Raju, P. R. (2024), we learned how leveraging UML diagrams can help in having a structured approach for the automated generation of test cases. Their work surveys how models such as sequence or state diagrams can be systematically analyzed to create test suites, optimize them for better coverage or reduced redundancy, and prioritize test execution. It also explores the limitations of this approach, like the focus on only certain diagram types and the need for better handling of model complexity.</p>
+                <p>For this Unit we learned about testing and how to implement tests in a Python program. Through the textbook <i>Review of Automated Test Case Generation, Optimisation, and Prioritisation Using UML Diagrams: Trends, Limitations, and Future Directions</i> by Kongarana, S. R., Rao, A. A. and Raju, P. R. (2024), we learned how leveraging UML diagrams can help in having a structured approach for the automated generation of test cases. Their work surveys how models such as sequence or state diagrams can be systematically analysed to create test suites, optimise them for better coverage or reduced redundancy, and prioritise test execution. It also explores the limitations of this approach, like the focus on only certain diagram types and the need for better handling of model complexity.</p>
                 <p> The exercise on Cyclomatic Complexity can be found below:</p>
                 <img src="assets/cyclomatic-complexity-exercise.png" alt="cyclomatic-complexity-exercise" class="article-image">
             </article>
@@ -110,10 +193,13 @@
             </article>
             <article>
                 <h3>Unit 12: Working with Design Patterns to Structure Code</h3>
-                <p>In the final unit we learned about design patterns and how they can be used to structure code. For example, The Factory design pattern simplifies object creation by centralizing the instantiation logic, allowing software to produce objects without knowing the specific class beforehand. Multiple design patterns are often used together within a single software project, and certain patterns frequently complement each other and are thus commonly applied in combination.</p>
+                <p>In the final unit we learned about design patterns and how they can be used to structure code. For example, The Factory design pattern simplifies object creation by centralising the instantiation logic, allowing software to produce objects without knowing the specific class beforehand. Multiple design patterns are often used together within a single software project, and certain patterns frequently complement each other and are thus commonly applied in combination.</p>
                 <p>In this unit the e-portfolio was worked on and the final submission was made.</p>
             </article>
         </section>
+         
+        </section>
+       
     </main>
 
     <footer>
